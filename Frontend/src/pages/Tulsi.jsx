@@ -28,7 +28,11 @@ const Tulsi= () => {
         <BookmarkButton plantName="Tulsi" />
       </section>
     </div>
+ 
   );
 }
+  )
+} 
+ 
 
 export default Tulsi;
