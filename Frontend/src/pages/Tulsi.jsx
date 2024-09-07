@@ -31,8 +31,6 @@ const Tulsi= () => {
  
   );
 }
-  )
-} 
  
 
 export default Tulsi;
