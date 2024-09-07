@@ -6,6 +6,6 @@ const Tulsi = () => {
       Tulsi
     </div>
   )
-}
+} 
 
 export default Tulsi
