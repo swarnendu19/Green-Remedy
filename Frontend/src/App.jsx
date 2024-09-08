@@ -2,7 +2,7 @@ import { lazy } from 'react'
 import './App.css'
 import Tulsi from "./pages/Tulsi"
 
-const Home = lazy(() => import("./pages/home"))
+// const Home = lazy(() => import("./pages/home"))
 
 
 function App() {
