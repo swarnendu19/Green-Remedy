@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          {/* Define routes */}
+          
           <Route path="/" element={<Home />} />
           <Route path="/tulsi" element={<Tulsi />} />
         </Routes>
