@@ -8,7 +8,7 @@ const Tulsi = () => {
   return (
     <div className="tulsi-page">
       {/* 3D Model of Tulsi */}
-      <section className="tulsi-model-section">
+      <section className="tulsi-model-section ">
         <h2>Tulsi (Holy Basil)</h2>
         <TulsiModel />
       </section>
