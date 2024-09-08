@@ -1,16 +1,16 @@
 import { lazy } from 'react'
 import './App.css'
-const Tulsi = lazy(() => import("./pages/Tulsi"))
- 
+
+
+const Home = lazy(() => import("./pages/home"))
+
 function App() {
 
   return (
     <>
       <div>
-        <Tulsi />
-        {/* <Home />
-        <About/> */}
-        {/* <ThreeJs/> */}
+        {/* <Tulsi /> */}
+        <Home />
       </div>
     </>
   )

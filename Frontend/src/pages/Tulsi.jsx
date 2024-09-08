@@ -6,7 +6,7 @@ import "../App.css"
 
 const Tulsi = () => {
   return (
-    <div className="tulsi-page">
+    <div id="tulsi-page" className="bg-gradient-to-b from-green-300 via-green-200 to-green-100">
       {/* 3D Model of Tulsi */}
       <section className="tulsi-model-section ">
         <h2>Tulsi (Holy Basil)</h2>
