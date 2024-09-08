@@ -1,72 +1,119 @@
- import React from 'react'
-import { TulsiDetails } from './data'
+import React from 'react';
+import { TulsiDetails } from './data';
+import { Table } from './Table';
+
 
 const PlantDetails = () => {
   return (
-    <div id='tulsi-data' className='m-auto border-2 border-black max-w-[1300px] flex justify-between border-box mt-5'>
-      <div id='left' className='h-96 w-[20%]'>
-        <p><a href='#morphology' className='cursor-pointer'>Morphology</a></p>
-        <p><a href='#phytochemicals' className='cursor-pointer'>Phytochemicals</a></p>
-        <p><a href='#uses' className='cursor-pointer'>Uses</a></p>
+    <div
+      id='tulsi-data'
+      className='m-auto max-w-[1300px] flex justify-between border-box mt-5 p-5'
+      style={{
+        backgroundImage: "url('../../public/bg.jpeg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      {/* Left navigation with sticky behavior */}
+      <div
+        id='left'
+        className='h-[100vh] w-[20%] bg-white/60 p-3 rounded-l-lg shadow-lg flex flex-col items-center space-y-8'
+        style={{
+          position: 'sticky',
+          top: '0', // Sticks when it reaches the top of its container
+          alignSelf: 'flex-start', // Ensures that it scrolls initially
+        }}
+      >
+        <img
+          src='../../public/plantDetailsimg1.jpg'
+          alt='Tulsi Plant'
+          className='rounded-lg w-full h-40 object-cover shadow-md hover:scale-[1.05] duration-300'
+        />
+        <div className='flex flex-col space-y-2'>
+          <p><a href='#morphology' className='text-[1.15rem] text-green-800 font-medium cursor-pointer hover:text-green-600 transition-colors duration-300'>Morphology</a></p>
+          <p><a href='#phytochemicals' className='text-[1.15rem] text-green-800 font-medium cursor-pointer hover:text-green-600 transition-colors duration-300'>Phytochemicals</a></p>
+          <p><a href='#uses' className='text-[1.15rem] text-green-800 font-medium cursor-pointer hover:text-green-600 transition-colors duration-300'>Uses</a></p>
+          <div className='-ml-2'>
+            <ul className='list-disc'>
+              <div className='px-12'>
+                <li><a href="#culinary" className='text-[1.08rem] text-green-800 font-medium cursor-pointer hover:text-green-600 transition-colors duration-300'>Culinary</a></li>
+                <li><a href="#thaiCuisine" className='text-[1.08rem] text-green-800 font-medium cursor-pointer hover:text-green-600 transition-colors duration-300'>Thai Cuisine</a></li>
+                <li><a href="#insectRepellent" className='text-[1.08rem] text-green-800 font-medium cursor-pointer hover:text-green-600 transition-colors duration-300'>Insect Repellent</a></li>
+                <li><a href="#nematicidal" className='text-[1.08rem] text-green-800 font-medium cursor-pointer hover:text-green-600 transition-colors duration-300'>Nematicidal</a></li>
+                <li><a href="#disinfection" className='text-[1.08rem] text-green-800 font-medium cursor-pointer hover:text-green-600 transition-colors duration-300'>Disinfection</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-        <ul className='list-disc'>
-            <div className='px-12'>
-              <li className='cursor-pointer'>
-                <a href="">Culinary</a>
-              </li>
-              <li className='cursor-pointer'>
-                <a href="">ThaiCuisine</a>
-              </li>
-              <li className='cursor-pointer'>
-                <a href="">InsectRepellent</a>
-              </li>
-              <li className='cursor-pointer'>
-                <a href="">Nematicidal</a>
-              </li>
-              <li className='cursor-pointer'>
-                <a href="">Disinfection</a>
-              </li>
-            </div>
-          </ul>
-        
+      {/* Mid section */}
+      <div
+        id='mid'
+        className='w-[55%] p-6 bg-white/80 shadow-lg'
+      >
+        <h1 className='text-[2.5rem] underline text-green-800 font-bold'>{TulsiDetails.botanicalName}</h1>
+        <p className='text-green-900'>{TulsiDetails.description}</p>
+        <h2 id='morphology' className='text-[1.5rem] font-semibold text-green-700 mt-4'>Morphology</h2>
+        <p>{TulsiDetails.morphology}</p>
+        <h2 id='phytochemicals' className='text-[1.5rem] font-semibold text-green-700 mt-4'>Phytochemicals</h2>
+        <p>{TulsiDetails.phytochemicals}</p>
+        <h2 id='uses' className='text-[1.5rem] font-semibold text-green-700 mt-4'>Uses:</h2>
+        <ul className='list-disc px-12'>
+          <li>
+            <h3 id='culinary' className='text-[1.2rem] font-medium text-green-600'>Culinary</h3>
+            <p>{TulsiDetails.uses.culinary}</p>
+          </li>
+          <li>
+            <h3 id='thaiCuisine' className='text-[1.2rem] font-medium text-green-600'>Thai Cuisine</h3>
+            <p>{TulsiDetails.uses.thaiCuisine}</p>
+          </li>
+          <li>
+            <h3 id='insectRepellent' className='text-[1.2rem] font-medium text-green-600'>Insect Repellent</h3>
+            <p>{TulsiDetails.uses.insectRepellent}</p>
+          </li>
+          <li>
+            <h3 id='nematicidal' className='text-[1.2rem] font-medium text-green-600'>Nematicidal</h3>
+            <p>{TulsiDetails.uses.nematicidal}</p>
+          </li>
+          <li>
+            <h3 id='disinfection' className='text-[1.2rem] font-medium text-green-600'>Disinfection</h3>
+            <p>{TulsiDetails.uses.disinfection}</p>
+          </li>
+        </ul>
       </div>
-      <div id='mid' className='w-[60%] bg-green-500'>
-        
-          <h1 className='text-[2.5rem] underline'>{TulsiDetails.botanicalName}</h1>
-          <p className=''>{TulsiDetails.description}</p>
-          <h2 id='morphology' className='text-[1.5rem] font-semibold'>Morphology</h2>
-          <p>{TulsiDetails.morphology}</p>
-          <h2 id='phytochemicals' className='text-[1.5rem] font-semibold'>Phytochemicals</h2>
-          <p>{TulsiDetails.phytochemicals}</p>
-          <p id='uses' className='text-[1.5rem] font-semibold'>Uses:</p>
-          <ul className='list-disc'>
-            <div className='px-12'>
-              <li>
-                <h2 className='text-[1.2rem] font-medium'>Culinary</h2>
-                <p>{TulsiDetails.uses.culinary}</p>
-              </li>
-              <li>
-                <h2 className='text-[1.2rem] font-medium'>ThaiCuisine</h2>
-                <p>{TulsiDetails.uses.thaiCuisine}</p>
-              </li>
-              <li>
-                <h2 className='text-[1.2rem] font-medium'>InsectRepellent</h2>
-                <p>{TulsiDetails.uses.insectRepellent}</p>
-              </li>
-              <li>
-                <h2 className='text-[1.2rem] font-medium'>Nematicidal</h2>
-                <p>{TulsiDetails.uses.nematicidal}</p>
-              </li>
-              <li>
-                <h2 className='text-[1.2rem] font-medium'>Disinfection</h2>
-                <p>{TulsiDetails.uses.disinfection}</p>
-              </li>
-            </div>
-          </ul>
+
+      {/* Right section with sticky behavior */}
+      <div
+        id='right'
+        className='h-auto w-[25%] bg-white/70 p-3 rounded-r-lg shadow-lg flex flex-col items-center space-y-5'
+        style={{
+          position: 'sticky',
+          top: '0', // Sticks when it reaches the top of its container
+          alignSelf: 'flex-start', // Ensures that it scrolls initially
+        }}
+      >
+        <img
+          src='../../public/plantDetailsimg4.jpg'
+          alt='Herbal Plant'
+          className='rounded-lg w-full h-40 object-cover shadow-md hover:scale-[1.05] duration-300'
+        />
+        <Table />
+        <img
+          src='../../public/plantDetailsimg3.jpg'
+          alt='Herbal Plant'
+          className='rounded-lg w-full h-40 object-cover shadow-md hover:scale-[1.05] duration-300'
+        />
+        <img
+          src='../../public/plantDetailsimg2.jpg'
+          alt='Herbal Plant'
+          className='rounded-lg w-full h-40 object-cover shadow-md hover:scale-[1.05] duration-300'
+        />
+
       </div>
-      <div id='right' className='h-96 w-[20%] bg-red-500'></div>
     </div>
-  )
-}
+  );
+};
 
-export default PlantDetails
+export default PlantDetails;

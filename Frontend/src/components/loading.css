@@ -1,0 +1,33 @@
+/* la.css */
+
+/* Background with green patches */
+body {
+    background: linear-gradient(135deg, #e2f0cb 25%, #d0e5b8 25%, #d0e5b8 50%, #e2f0cb 50%, #e2f0cb 75%, #d0e5b8 75%, #d0e5b8 100%);
+    height: 100vh;
+    width: 100vw;
+    /* Adjust the size to fit your design */
+}
+
+/* Enhanced Spinner */
+.animate-spin {
+    border-color: #4caf50;
+    /* Green color for the spinner */
+    border-top-color: transparent;
+    /* Transparent top border */
+    border-radius: 50%;
+    /* Ensure the spinner is circular */
+    animation: spin 1s linear infinite;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for effect */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
