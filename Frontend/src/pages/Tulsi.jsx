@@ -1,10 +1,10 @@
 import TulsiModel from "../components/TulsiModel";
 import PlantDetails from "../components/PlantDetails";
-import MultimediaSection from "../components/MultimediaSection"
-import BookmarkButton from "../components/BookmarkButton"
+// import MultimediaSection from "../components/MultimediaSection"
+// import BookmarkButton from "../components/BookmarkButton"
 import "../App.css"
 
-const Tulsi= () => {
+const Tulsi = () => {
   return (
     <div className="tulsi-page">
       {/* 3D Model of Tulsi */}
@@ -12,25 +12,25 @@ const Tulsi= () => {
         <h2>Tulsi (Holy Basil)</h2>
         <TulsiModel />
       </section>
-      
+
       {/* Plant DetailPs */}
       <section className="tulsi-details-section">
         <PlantDetails />
       </section>
 
       {/* Multimedia Section */}
-      <section className="tulsi-multimedia-section">
-        <MultimediaSection />
-      </section>
+      {/* Multimedia Section */}
+
 
       {/* Bookmark Button */}
-      <section className="bookmark-section">
+      {/* <section className="bookmark-section">
         <BookmarkButton plantName="Tulsi" />
-      </section>
+      </section>*/}
+
     </div>
- 
+
   );
 }
- 
+
 
 export default Tulsi;
