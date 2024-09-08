@@ -1,5 +1,6 @@
 import { lazy } from 'react'
 import './App.css'
+
 // import Tulsi from './pages/Tulsi'
 // import Home from './Home'
 
@@ -7,6 +8,7 @@ import './App.css'
 
 const Tulsi = lazy(() => import("./pages/Tulsi"))
 const Home = lazy(() => import("./pages/home"))
+
 function App() {
 
   return (
