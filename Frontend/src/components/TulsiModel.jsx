@@ -1,9 +1,10 @@
 import React from 'react'
+import ThreeJs from '../pages/ThreeJs'
 
 const TulsiModel = () => {
   return (
     <div>
-      3D model(coming Soon)
+      <ThreeJs/>
     </div>
   )
 }
