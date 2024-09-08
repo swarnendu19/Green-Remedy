@@ -1,5 +1,6 @@
 import { lazy } from 'react'
 import './App.css'
+import ThreeJs from './pages/ThreeJs'
 const Tulsi = lazy(() => import("./pages/Tulsi"))
  
 function App() {
@@ -7,10 +8,10 @@ function App() {
   return (
     <>
       <div>
-        <Tulsi />
+        {/* <Tulsi /> */}
         {/* <Home />
         <About/> */}
-        {/* <ThreeJs/> */}
+        <ThreeJs/>
       </div>
     </>
   )
