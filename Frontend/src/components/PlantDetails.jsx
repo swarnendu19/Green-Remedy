@@ -7,7 +7,7 @@ const PlantDetails = () => {
   return (
     <div
       id='tulsi-data'
-      className='m-auto max-w-[1500px] flex justify-between border-box mt-5 p-5'
+      className='m-auto max-w-[1500px] flex justify-between border-box p-5'
       style={{
         backgroundImage: "url('../../public/bg.jpeg')",
         backgroundSize: 'cover',

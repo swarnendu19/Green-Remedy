@@ -8,10 +8,9 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading delay
     setTimeout(() => {
       setLoading(false);
-    }, 2000); // Adjust the duration as needed
+    }, 2000);  
   }, []);
 
   return (

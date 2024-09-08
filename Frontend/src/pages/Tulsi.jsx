@@ -8,7 +8,7 @@ const Tulsi = () => {
   return (
     <div id="tulsi-page" className="bg-gradient-to-b from-green-300 via-green-200 to-green-100">
       {/* 3D Model of Tulsi */}
-      <section className="tulsi-model-section">
+      <section className="tulsi-model-section ">
         <h2>Tulsi (Holy Basil)</h2>
         <TulsiModel />
       </section>
