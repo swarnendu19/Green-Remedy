@@ -1,7 +1,5 @@
 import TulsiModel from "../components/TulsiModel";
 import PlantDetails from "../components/PlantDetails";
-// import MultimediaSection from "../components/MultimediaSection"
-// import BookmarkButton from "../components/BookmarkButton"
 import "../App.css";
 
 const Tulsi = () => {
