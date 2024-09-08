@@ -1,5 +1,5 @@
 import React from 'react'
-import ThreeJs from '../pages/ThreeJs'
+import ThreeJs from './ThreeJs'
 
 const TulsiModel = () => {
   return (

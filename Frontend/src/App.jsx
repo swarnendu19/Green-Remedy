@@ -1,17 +1,17 @@
 import { lazy } from 'react'
 import './App.css'
-import ThreeJs from './pages/ThreeJs'
-const Tulsi = lazy(() => import("./pages/Tulsi"))
- 
+import Tulsi from "./pages/Tulsi"
+
+const Home = lazy(() => import("./pages/home"))
+
+
 function App() {
 
   return (
     <>
       <div>
-        {/* <Tulsi /> */}
-        {/* <Home />
-        <About/> */}
-        <ThreeJs/>
+        <Tulsi />
+        {/* <Home /> */}
       </div>
     </>
   )

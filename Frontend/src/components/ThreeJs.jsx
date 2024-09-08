@@ -4,8 +4,7 @@ import { OrbitControls } from '@react-three/drei';
 import React, { Suspense } from 'react';
 
 const Model = () => {
-  const gltf = useLoader(GLTFLoader, '/projectjs.gltf'); 
-
+  const gltf = useLoader(GLTFLoader, '/projectjs.glb');
   return <primitive object={gltf.scene} scale={2.7} />;
 };
 
