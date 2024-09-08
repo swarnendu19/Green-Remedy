@@ -1,20 +1,22 @@
-import { lazy } from 'react'
-import './App.css'
-import Tulsi from "./pages/Tulsi"
+import { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 
-// const Home = lazy(() => import("./pages/home"))
-
+const Home = lazy(() => import('./pages/Home'));
+const Tulsi = lazy(() => import('./pages/Tulsi'));
 
 function App() {
-
   return (
-    <>
-      <div>
-        <Tulsi />
-        {/* <Home /> */}
-      </div>
-    </>
-  )
+    <Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          {/* Define routes */}
+          <Route path="/" element={<Home />} />
+          <Route path="/tulsi" element={<Tulsi />} />
+        </Routes>
+      </Suspense>
+    </Router>
+  );
 }
 
-export default App
+export default App;

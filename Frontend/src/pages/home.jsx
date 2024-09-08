@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import LoadingAni from '../components/LoadingAni'; // Check this path
-import About from '../components/About'; // Ensure this path is correct
+import LoadingAni from '../components/LoadingAni';  
+import About from '../components/About';  
 import Contact from "../components/ContactUs";
 import Footer from "../components/Footer";
+import {Link }from "react-router-dom"
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -10,7 +11,7 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);  
+    }, 1200);  
   }, []);
 
   return (
@@ -68,9 +69,11 @@ function Home() {
                 <p className="text-lg mb-6">
                   Discover the healing power of herbs and natural remedies with our extensive database and resources.
                 </p>
-                <a href="#learn-more" className="bg-green-700 text-white px-6 py-2 rounded-md hover:bg-green-300 hover:text-green-950 border border-1 border-green-300">
-                  Learn More
-                </a>
+                <Link to="/tulsi" 
+                className="bg-green-700 text-white px-6 py-2 rounded-md hover:bg-green-300 hover:text-green-950 border border-1 border-green-300"
+                >
+                Learn More
+               </Link>
               </div>
             </div>
           </div>
