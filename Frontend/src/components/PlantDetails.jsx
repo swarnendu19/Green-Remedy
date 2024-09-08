@@ -9,7 +9,7 @@ const PlantDetails = () => {
       id='tulsi-data'
       className='m-auto max-w-[1500px] flex justify-between border-box p-5 -mt-[10rem]'
       style={{
-        backgroundImage: "url('../../public/bg.jpeg')",
+        backgroundImage: "url('https://res.cloudinary.com/dtffsa7p9/image/upload/v1725820250/bg_a7wlnu.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -26,7 +26,7 @@ const PlantDetails = () => {
         }}
       >
         <img
-          src='../../public/plantDetailsimg1.jpg'
+          src='https://res.cloudinary.com/dtffsa7p9/image/upload/v1725820115/plantDetailsimg1_wsaqfg.webp'
           alt='Tulsi Plant'
           className='rounded-lg w-full h-40 object-cover shadow-md hover:scale-[1.05] duration-300'
         />
@@ -95,18 +95,18 @@ const PlantDetails = () => {
         }}
       >
         <img
-          src='../../public/plantDetailsimg4.jpg'
+          src='https://res.cloudinary.com/dtffsa7p9/image/upload/v1725819642/plantDetailsimg4_ww7mex.webp'
           alt='Herbal Plant'
           className='rounded-lg w-full h-40 object-cover shadow-md hover:scale-[1.05] duration-300'
         />
         <Table />
         <img
-          src='../../public/plantDetailsimg3.jpg'
+          src='https://res.cloudinary.com/dtffsa7p9/image/upload/v1725819652/plantDetailsimg3_s0x0j5.jpg'
           alt='Herbal Plant'
           className='rounded-lg w-full h-40 object-cover shadow-md hover:scale-[1.05] duration-300'
         />
         <img
-          src='../../public/plantDetailsimg2.jpg'
+          src='https://res.cloudinary.com/dtffsa7p9/image/upload/v1725819658/plantDetailsimg2_s6nf9s.png'
           alt='Herbal Plant'
           className='rounded-lg w-full h-40 object-cover shadow-md hover:scale-[1.05] duration-300'
         />
