@@ -51,7 +51,7 @@ const PlantDetails = () => {
       {/* Mid section */}
       <div
         id='mid'
-        className='w-[55%] p-6 bg-white/80 shadow-lg'
+        className='w-[55%] p-6 bg-white/80 shadow-lg text-green-800'
       >
         <h1 className='text-[2.5rem] underline text-green-800 font-bold'>{TulsiDetails.botanicalName}</h1>
         <p className='text-green-900'>{TulsiDetails.description}</p>
