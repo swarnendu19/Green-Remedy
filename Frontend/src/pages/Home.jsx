@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import LoadingAni from '../components/LoadingAni';  
-import About from '../components/About';  
+import LoadingAni from '../components/LoadingAni';
+import About from '../components/About';
 import Contact from "../components/ContactUs";
 import Footer from "../components/Footer";
-import {Link }from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -11,7 +11,7 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1200);  
+    }, 1200);
   }, []);
 
   return (
@@ -30,7 +30,7 @@ function Home() {
                   <input
                     type="text"
                     placeholder="Search..."
-                    className="w-full p-2 border rounded-l-md border-gray-300 focus:outline-none focus:ring-1 focus:ring-green-800"
+                    className="w-full bg-white text-green-700 p-2 border rounded-l-md border-gray-300 focus:outline-none focus:ring-1 focus:ring-green-800"
                   />
                   <button className="bg-green-800 text-white p-1 rounded-r-md hover:bg-green-600">
                     <svg
@@ -51,9 +51,9 @@ function Home() {
                 </div>
 
                 <div className="hidden md:flex space-x-4">
-                  <a href="#home" className="text-green-800 hover:bg-green-700 px-4 py-2 rounded-lg hover:text-white">Home</a>
-                  <a href="#about" className="text-green-800 hover:bg-green-700 px-4 py-2 rounded-lg hover:text-white">About</a>
-                  <a href="#contact" className="text-green-800 hover:bg-green-700 px-4 py-2 rounded-lg hover:text-white">Contact Us</a>
+                  <a href="#home" className="text-lg font-semibold text-green-800 hover:bg-green-700 px-4 py-2 rounded-lg hover:text-white">Home</a>
+                  <a href="#about" className="text-lg font-semibold text-green-800 hover:bg-green-700 px-4 py-2 rounded-lg hover:text-white">About</a>
+                  <a href="#contact" className="text-lg font-semibold text-green-800 hover:bg-green-700 px-4 py-2 rounded-lg hover:text-white">Contact Us</a>
                 </div>
 
                 <a href="#login" className="bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-600">
@@ -63,17 +63,17 @@ function Home() {
             </nav>
 
             {/* Main Content */}
-            <div className="flex items-center justify-center min-h-screen">
+            <div className="flex items-center justify-center min-h-screen slide-up">
               <div className="text-center text-white px-6 py-4 bg-green-800 bg-opacity-80 rounded-lg">
                 <h2 className="text-4xl font-bold mb-4">Welcome to Green Remedy</h2>
                 <p className="text-lg mb-6">
                   Discover the healing power of herbs and natural remedies with our extensive database and resources.
                 </p>
-                <Link to="/tulsi" 
-                className="bg-green-700 text-white px-6 py-2 rounded-md hover:bg-green-300 hover:text-green-950 border border-1 border-green-300"
+                <Link to="/tulsi"
+                  className="bg-green-700 text-white px-6 py-2 rounded-md hover:bg-green-300 hover:text-green-950 border border-1 border-green-300"
                 >
-                Learn More
-               </Link>
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>
