@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Table = () => {
     return (
-        <table className="table-auto border-collapse border border-green-500 w-full text-left">
+        <table className="table-auto border-collapse border border-green-500 w-full text-left text-green-800">
             <thead>
                 <tr>
                     <th className="border border-green-500 px-2 py-1 bg-green-100">Feature</th>
