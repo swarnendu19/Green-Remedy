@@ -12,7 +12,7 @@ export const Table = () => {
             </thead>
             <tbody>
                 <tr>
-                    <td className="border border-green-500 px-2 break-words">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                    <td className="border border-green-500 px-2 break-words">Tulsi</td>
                     <td className="border border-green-500 px-2 break-words">Malcolm Lockyer</td>
                     <td className="border border-green-500 px-2 break-words">1961</td>
                 </tr>

@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import LoadingAni from './components/LoadingAni'; // Adjust the path if needed
+import LoadingAni from './components/LoadingAni'; 
 
 const Home = lazy(() => import('./pages/Home'));
 const Tulsi = lazy(() => import('./pages/Tulsi'));
