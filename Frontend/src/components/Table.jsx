@@ -1,32 +1,52 @@
-import React from 'react'
+import React from 'react';
 
 export const Table = () => {
     return (
         <table className="table-auto border-collapse border border-green-500 w-full text-left text-green-800">
             <thead>
                 <tr>
-                    <th className="border border-green-500 px-2 py-1 bg-green-100">Song</th>
-                    <th className="border border-green-500 px-2 py-1 bg-green-100">Artist</th>
-                    <th className="border border-green-500 px-2 py-1 bg-green-100">Year</th>
+                    <th className="border border-green-500 px-2 py-1 bg-green-100">Feature</th>
+                    <th className="border border-green-500 px-2 py-1 bg-green-100">Details</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td className="border border-green-500 px-2 break-words">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                    <td className="border border-green-500 px-2 break-words">Malcolm Lockyer</td>
-                    <td className="border border-green-500 px-2 break-words">1961</td>
+                    <td className="border border-green-500 px-2 break-words">Growth Zones</td>
+                    <td className="border border-green-500 px-2 break-words">10-11</td>
                 </tr>
                 <tr>
-                    <td className="border border-green-500 px-2 break-words">Witchy Woman</td>
-                    <td className="border border-green-500 px-2 break-words">The Eagles</td>
-                    <td className="border border-green-500 px-2 break-words">1972</td>
+                    <td className="border border-green-500 px-2 break-words">Growth Rate</td>
+                    <td className="border border-green-500 px-2 break-words">Fast</td>
                 </tr>
                 <tr>
-                    <td className="border border-green-500 px-2 break-words">Shining Star</td>
-                    <td className="border border-green-500 px-2 break-words">Earth, Wind, and Fire</td>
-                    <td className="border border-green-500 px-2 break-words">1975</td>
+                    <td className="border border-green-500 px-2 break-words">Mature Height</td>
+                    <td className="border border-green-500 px-2 break-words">1-2 ft.</td>
+                </tr>
+                <tr>
+                    <td className="border border-green-500 px-2 break-words">Mature Width</td>
+                    <td className="border border-green-500 px-2 break-words">1-2 ft.</td>
+                </tr>
+                <tr>
+                    <td className="border border-green-500 px-2 break-words">Sunlight</td>
+                    <td className="border border-green-500 px-2 break-words">Thrives in Full Sun, Partial Shade</td>
+                </tr>
+                <tr>
+                    <td className="border border-green-500 px-2 break-words">Foliage/Blooms</td>
+                    <td className="border border-green-500 px-2 break-words">Green leaves, purple-white flowers</td>
+                </tr>
+                <tr>
+                    <td className="border border-green-500 px-2 break-words">Uses</td>
+                    <td className="border border-green-500 px-2 break-words">Medicinal, Culinary, Religious, Ornamental</td>
+                </tr>
+                <tr>
+                    <td className="border border-green-500 px-2 break-words">Characteristics</td>
+                    <td className="border border-green-500 px-2 break-words">Aromatic, attracts pollinators</td>
+                </tr>
+                <tr>
+                    <td className="border border-green-500 px-2 break-words">Soil Conditions</td>
+                    <td className="border border-green-500 px-2 break-words">Prefers well-drained soil</td>
                 </tr>
             </tbody>
         </table>
-    )
-}
+    );
+};
