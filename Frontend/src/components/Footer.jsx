@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-l from-green-600 via-green-100 to-green-600 text-green-800 py-10 border-t-2 border-white">
-            <div className="container mx-auto px-8 md:px-16 lg:px-24">
+        <footer className="bg-gradient-to-l from-green-600 via-green-100 to-green-600 text-green-800 py-10">
+            <div className="max-w-[1200px] container mx-auto px-8 md:px-16 lg:px-24">
                 {/* Footer Top Section */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                     {/* About Section */}
