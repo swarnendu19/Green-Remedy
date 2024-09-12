@@ -3,16 +3,23 @@ import LoadingAni from '../components/LoadingAni';
 import About from '../components/About';
 import Contact from "../components/ContactUs";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 function Home() {
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate()
+
+  const handleLoginButtonClicked = ()=>{
+    navigate('/login')
+  }
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 1200);
   }, []);
+
+
 
   return (
     <>
@@ -56,9 +63,11 @@ function Home() {
                   <a href="#contact" className="text-lg font-semibold text-green-800 hover:bg-green-700 px-4 py-2 rounded-lg hover:text-white">Contact Us</a>
                 </div>
 
-                <a href="#login" className="bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-600">
+                <button 
+                onClick={handleLoginButtonClicked}
+                className="bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-600">
                   Login
-                </a>
+                </button>
               </div>
             </nav>
 
