@@ -11,10 +11,6 @@ export const Table = () => {
             </thead>
             <tbody>
                 <tr>
-                    <td className="border border-green-500 px-2 break-words">Growth Zones</td>
-                    <td className="border border-green-500 px-2 break-words">10-11</td>
-                </tr>
-                <tr>
                     <td className="border border-green-500 px-2 break-words">Growth Rate</td>
                     <td className="border border-green-500 px-2 break-words">Fast</td>
                 </tr>
